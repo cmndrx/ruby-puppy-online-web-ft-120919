@@ -19,7 +19,11 @@ class Dog
     @@all.each do |dog|
       puts dog.name
     end
-  end  
+  end
+  
+  def save
+  self << @@all
+  end
 
   def self.clear_all
     @@all.clear
